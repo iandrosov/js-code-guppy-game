@@ -8,10 +8,18 @@ let coins = new Group();
 let isDirectionLeft = true;
 textSize(20);
 let countPoints = text('POINTS: '+playerPoints, 600, 30);
+let button = sprite('CandyPlay', 40, 40, 0.5);
 
 //music('Fun Background', 0.1);
 //music('Rainbow', 0.1);
 music('Jump and Run', 0.5);
+
+function mouseClicked()
+{
+    if(mouseX < 60 && mouseY < 60){
+        dropCoins();
+    }
+}
 
 function displayPoints(){
     playerPoints += 1;
