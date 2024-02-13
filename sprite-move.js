@@ -45,6 +45,11 @@ function climbDown(){
     player.show('climb');
 }
 
+function jump(){
+    player.y -= 2;
+    player.show("jump");
+}
+
 function loop()
 {
     player.show("idle");
